@@ -28,7 +28,7 @@ func suggestQueries( searchString : String ) throws -> [String] {
 }
 
 do {
-    try suggestQueries( searchString: "swift")
+    try suggestQueries( searchString: "why does trump")
 }
 catch let err as QueryError {
     print( "QueryError: \(err)!" )
