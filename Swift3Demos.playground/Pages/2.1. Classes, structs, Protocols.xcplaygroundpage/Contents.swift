@@ -40,7 +40,7 @@ extension Session : CustomStringConvertible {
     }
 }
 print (session)
-session.date = Date(string: "2016-04-20")
+session.date = Date(string: "2016-09-07")
 session.date
 
 

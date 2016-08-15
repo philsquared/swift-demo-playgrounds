@@ -8,7 +8,7 @@ let str = "hello"
 // str += ", accu" // doesn't compile
 
 var str2 = "hello" // change to var
-str2 += ", Accu"
+str2 += ", NorDev"
 
 // can print (directly)
 print( str2 )
