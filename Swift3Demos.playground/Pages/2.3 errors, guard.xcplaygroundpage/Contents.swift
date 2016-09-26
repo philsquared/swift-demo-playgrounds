@@ -1,3 +1,4 @@
+// 20 mins
 import Foundation
 
 enum QueryError : Error {
@@ -6,8 +7,8 @@ enum QueryError : Error {
     case JSONError
 }
 
-func suggestQueries( searchString : String ) throws -> [String] {
-    let qs = ("client=firefox&q=" + searchString).addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed )!
+func suggestQueries( for searchString : String ) throws -> [String] {
+    let qs = ("client=firefox&q=" + searchString).addingPercentEncoding( withAllowedCharacters: CharacterSet.urlQueryAllowed )!
     let requestString = "http://suggestqueries.google.com/complete/search?" + qs
     
     guard let url = URL( string: requestString ) else {
@@ -28,7 +29,7 @@ func suggestQueries( searchString : String ) throws -> [String] {
 }
 
 do {
-    try suggestQueries( searchString: "why does trump")
+    try suggestQueries( for: "why do")
 }
 catch let err as QueryError {
     print( "QueryError: \(err)!" )
@@ -37,4 +38,4 @@ catch {
     print( "Error!" )
 }
 
-let results = try? suggestQueries( searchString: "why does trump" )
+let results = try? suggestQueries( for: "why do" )

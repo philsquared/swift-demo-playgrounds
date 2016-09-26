@@ -1,20 +1,20 @@
 // 5 mins
 
-func sayHello1()
-{
+// Unlabeled argument and default labeled argument
+// return value
+func makeGreeting( _ greeting : String, name : String ) -> String {
+    return "\(greeting), \(name)"
+}
+
+// explicitly labeled argument
+// no return value
+func sayHello( to name : String ) {
+    print( makeGreeting( "Hello", name: name ) )
+}
+
+// No arguments, no return value
+func sayHello( ) {
     print( "Hello" )
 }
 
-// add "who" (note argument labels)
-
-// then add "greeting"
-
-// show how labels can be supressed
-
-func sayHello2( _ greeting : String, _ who : String )
-{
-    print( "\(greeting) \(who)" )
-}
-
-sayHello2("hello", "world" )
-sayHello2("goodbye cruel", "world" )
+sayHello( to: "world" )

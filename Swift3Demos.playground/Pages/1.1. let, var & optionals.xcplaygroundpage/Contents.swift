@@ -41,8 +41,7 @@ maybe == nil
 // How to get value from an optional?
 // 1. brute force
 maybe = "now I'm a string"
-if maybe != nil
-{
+if maybe != nil {
     print( maybe! )
 }
 // 2. if let

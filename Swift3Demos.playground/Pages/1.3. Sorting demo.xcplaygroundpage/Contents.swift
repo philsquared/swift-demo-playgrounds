@@ -1,8 +1,8 @@
-// 15 mins
+// 10 mins
 
-let languages = ["Java", "C++", "Swift", "Python", "Haskell", "F#"]
+let languages = ["C++", "Swift", "Kotlin", "F#", "Haskell"]
 
-languages.sorted()
+languages.sorted() // mutable variant = sort()
 
 // Full function
 func backwards( s1 : String, s2: String ) -> Bool {

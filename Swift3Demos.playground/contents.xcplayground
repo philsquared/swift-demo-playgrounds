@@ -6,7 +6,8 @@
         <page name='1.2. functions'/>
         <page name='2.1. Classes, structs, Protocols'/>
         <page name='1.4. map, filter, optionals'/>
-        <page name='1.5. enums &amp; pattern matching'/>
-        <page name='2.2 errors, guard'/>
+        <page name='2.2. enums with methods'/>
+        <page name='2.3 errors, guard'/>
+        <page name='1.5 enums &amp; pattern matching'/>
     </pages>
 </playground>
